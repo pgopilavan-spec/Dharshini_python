@@ -1,0 +1,63 @@
+## count the characters in str
+s=input("enter a str")
+c=0
+for i in s:
+    c+=1
+    print(c)
+#reverse a str without using  slicing
+s=input ("enter a str:")
+rev=""
+for i in s:
+    rev=i+rev
+print("reversed str:",rev)
+##to check whether a str is empty
+s=input("enter a str")
+if s=="":
+     print("str is empty")
+else:
+     print("str is not empty")
+###first and last charcter
+s=input("enter a str")
+if s:
+    print("first character:",s[0])
+    print("last character :",s[-1])
+else:      
+    print("str is empty")
+####remove spaces from the string
+s=input("enter a str")
+c=""
+for i in s:
+ if c!="":
+    c+=i
+ print("str without spaces:",c)
+####
+a=input("enter str")#python
+r=""
+for i in a:#y
+    r=i+r#y+p
+    print(r)
+if r==a:
+    print("palindrom")
+else:
+    print("not palindrom")
+##
+s1="fried"
+s2="fired"
+print(sorted(s1))
+print(sorted(s2))
+###  check whether two strings are anagrams
+s1=input("enter first string:")
+s2=input("enter second string:")
+if sorted (s1)==sorted(s2):
+    print("anagrams")
+else:
+    print(" not a anagrams")
+###check whether a str contains only digits
+s=input("enter a str:")
+if s.isdigit():
+    print("contains only digits")
+else:
+    print("does not contains digits")
+s1=input("enter first str")
+s2=input("enter second str")
+print(sorted(s1))
