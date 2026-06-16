@@ -1,0 +1,28 @@
+#to find square of a number
+square=lambda a:a*a
+print(square(13))
+#to check even or odd
+even_odd=lambda a:"even" if a%2==0 else"odd"
+print(even_odd(234))
+#find maximum of two numbers
+maximum=lambda a,b:a if a>b else b
+print(maximum(234,678))
+#to calculate cube
+cube=lambda a:a*3
+print(cube(6))
+#check positive or negative
+pos_neg=lambda a :"positive" if a>0 else "negative" 
+print(pos_neg(-12))
+#add two numbers
+add=lambda a,b:a+b
+print(add(10,39))
+#check the length
+length=lambda a:len(a)>5
+print(length("python"))
+###sort list of tuples by second value
+##data=[(1,5),(2,2),(3,8),(4,1)]
+##result=sorted(data ,key=lambda:a)
+##print(result)
+###to find minimum in list
+minimum=lambda lst:min(lst)
+print(minimum([10,5,345,67]))
