@@ -1,0 +1,85 @@
+##create identifier with string
+##(variable name),str(inside quotes)
+name="dharshini"
+print(name)
+##create identifier with float
+num=3.3
+print(num)
+##create identifier with string
+num=123
+print(num)
+##identifier naming rules
+##dont leave space
+##no special characters
+##dont start with keywords
+##dont start with numbers
+name="dharshini"
+mark=86
+_class="A2"
+print(name)
+print(mark)
+print(_class)
+###create int to float
+a=20
+b=float(a)
+print(b)
+##create float to string
+a=23.4
+b=str(a)
+print(b)
+##create str to int
+a="247"
+b=int(a)
+print(b)
+##create float to int
+a=34.7
+b=int(b)
+print(b)
+#arithmetic operator
+##add
+##sub
+##mul
+##div
+##floor div
+##mod
+##exp
+a=5
+b=3
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+print(a//b)
+print(a%b)
+print(a**b)
+##comparisional operator
+a=2
+b=3
+print(a==b)
+print(a!=b)
+print(a>b)
+print(a<b)
+print(a>=b)
+print(a<=b)
+##logical operator
+a=4
+b=5
+print(a and b)
+print(a or b)
+print(not b)
+###add two string
+a="hi"
+b="its me"
+print(a+b)
+###add two int
+a=5
+b=7
+print(a+b)
+##add int and str
+a=10
+b="26"
+print(str(a)+b)
+##multiply str and int
+a="hari"
+b=4
+print(a*b)
