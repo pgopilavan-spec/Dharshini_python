@@ -1,0 +1,174 @@
+
+###1
+class Student:
+    def __init__(self,hari , name, department, marks):
+        self.hari = hari
+        self.name = name
+        self.department = department
+        self.marks = marks
+
+    def display(self):
+        print("Student ID :", self.hari)
+        print("Name       :", self.name)
+        print("Department :", self.department)
+        print("Marks      :", self.marks)
+
+hari = int(input("Enter Student ID: "))
+name = input("Enter Name: ")
+department = input("Enter Department: ")
+marks = float(input("Enter Marks: "))
+
+s = Student(hari, name, department, marks)
+s.display()
+
+###2
+class Rectangle:
+    def __init__(self, length, breadth):
+        self.length = length
+        self.breadth = breadth
+
+    def area(self):
+        return self.length * self.breadth
+
+length = float(input("Enter Length: "))
+breadth = float(input("Enter Breadth: "))
+
+r = Rectangle(length, breadth)
+print("Area =", r.area())
+class Circle:
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        return 3.14 * self.radius * self.radius
+
+    def circumference(self):
+        return 2 * 3.14 * self.radius
+
+radius = float(input("Enter Radius: "))
+
+c = Circle(radius)
+###3
+print("Area =", c.area())
+print("Circumference =", c.circumference())
+class Employee:
+    def __init__(self, empid, name, designation, salary):
+        self.empid = empid
+        self.name = name
+        self.designation = designation
+        self.salary = salary
+
+    def display(self):
+        print("Employee ID :", self.empid)
+        print("Name        :", self.name)
+        print("Designation :", self.designation)
+        print("Salary      :", self.salary)
+
+empid = int(input("Enter Employee ID: "))
+name = input("Enter Name: ")
+designation = input("Enter Designation: ")
+salary = float(input("Enter Salary: "))
+
+e = Employee(empid, name, designation, salary)
+e.display()
+
+###4
+class Car:
+    def __init__(self, brand, model, year, price):
+        self.brand = brand
+        self.model = model
+        self.year = year
+        self.price = price
+
+    def display(self):
+        print("Brand :", self.brand)
+        print("Model :", self.model)
+        print("Year  :", self.year)
+        print("Price :", self.price)
+
+brand = input("Enter Brand: ")
+model = input("Enter Model: ")
+year = int(input("Enter Year: "))
+price = float(input("Enter Price: "))
+
+c = Car(brand, model, year, price)
+c.display()
+
+###5
+class Mobile:
+    def __init__(self, brand, storage, ram, price):
+        self.brand = brand
+        self.storage = storage
+        self.ram = ram
+        self.price = price
+
+    def display(self):
+        print("Brand   :", self.brand)
+        print("Storage :", self.storage)
+        print("RAM     :", self.ram)
+        print("Price   :", self.price)
+
+brand = input("Enter Brand: ")
+storage = input("Enter Storage: ")
+ram = input("Enter RAM: ")
+price = float(input("Enter Price: "))
+
+m = Mobile(brand, storage, ram, price)
+m.display()
+###6
+class BankAccount:
+    def __init__(self, accno, name, balance):
+        self.accno = accno
+        self.name = name
+        self.balance = balance
+
+    def deposit(self, amount):
+        self.balance += amount
+        print("Amount Deposited.")
+
+    def withdraw(self, amount):
+        if amount <= self.balance:
+            self.balance -= amount
+            print("Amount Withdrawn.")
+        else:
+            print("Insufficient Balance.")
+
+    def display(self):
+        print("Account No :", self.accno)
+        print("Customer   :", self.name)
+        print("Balance    :", self.balance)
+
+accno = int(input("Enter Account Number: "))
+name = input("Enter Customer Name: ")
+balance = float(input("Enter Initial Balance: "))
+
+b = BankAccount(accno, name, balance)
+
+amount = float(input("Enter Deposit Amount: "))
+b.deposit(amount)
+
+amount = float(input("Enter Withdraw Amount: "))
+b.withdraw(amount)
+
+b.display()
+###7
+class Book:
+    def __init__(self, bookid, title, author, category):
+        self.bookid = bookid
+        self.title = title
+        self.author = author
+        self.category = category
+
+    def display(self):
+        print("Book ID  :", self.bookid)
+        print("Title    :", self.title)
+        print("Author   :", self.author)
+        print("Category :", self.category)
+
+bookid = int(input("Enter Book ID: "))
+title = input("Enter Title: ")
+author = input("Enter Author: ")
+category = input("Enter Category: ")
+
+b = Book(bookid, title, author, category)
+b.display()
